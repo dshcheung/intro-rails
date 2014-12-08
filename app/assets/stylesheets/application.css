@@ -58,11 +58,26 @@ body {
   }
 }
 .oval {
-  width: 189px;
-  height: 97px;
+  width: 25px;
+  height: 50px;
   background: green;
   position: absolute;
-  left:-200px;
-  background: url("/images/gameOver.png");
+  border-radius: 50px/100px;
+  -webkit-border-radius: 50px/100px;
+  -moz-border-radius: 50px/100px;
+}
+/*this to apply to oval*/
+#oval {
+  -webkit-animation: rainDrop 1s ease-in infinite running;
+}
+@-webkit-keyframes rainDrop {
+  from {
+    top: 0%;
+    left: 10%;
+  }
+  to {
+    top: 100%;
+    left: 10%;
+  }
 }
 
